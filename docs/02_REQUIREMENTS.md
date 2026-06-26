@@ -105,42 +105,10 @@ application; analysis is the baseline capability.
 
 ## 3. Non-Functional Requirements
 
-### 3.1 Architecture Quality
-
-- **NFR-ARCH-01** The system MUST be implemented initially as a modular monolith.
-- **NFR-ARCH-02** Every major component MUST be independently replaceable.
-- **NFR-ARCH-03** Migration to microservices SHOULD require minimal changes.
-- **NFR-ARCH-04** The architecture MUST follow layered, clean, and event-driven
-  principles.
-
-### 3.2 Modularity and Coupling
-
-- **NFR-MOD-01** Components MUST communicate through well-defined interfaces and
-  events.
-- **NFR-MOD-02** The codebase MUST maintain high cohesion and low coupling.
-
-### 3.3 Observability
-
-- **NFR-OBS-01** Every pipeline stage MUST be observable through logging and
-  monitoring.
-- **NFR-OBS-02** Decisions and executions MUST be auditable after the fact.
-
-### 3.4 Configurability
-
-- **NFR-CFG-01** Behavior that varies by market, provider, or deployment MUST be
-  expressed as configuration, not hardcoded.
-
-### 3.5 Testability
-
-- **NFR-TEST-01** Components MUST be testable in isolation.
-- **NFR-TEST-02** Business logic MUST be deterministic and verifiable independent
-  of external providers.
-
-### 3.6 Security
-
-- **NFR-SEC-01** Provider credentials and secrets MUST be protected and never
-  embedded in business logic.
-- **NFR-SEC-02** Execution-capable paths MUST be guarded by explicit configuration.
+Non-functional requirements have moved to their single home,
+`08_NON_FUNCTIONAL_REQUIREMENTS.md`. The identifiers (`NFR-ARCH-*`, `NFR-MOD-*`,
+`NFR-OBS-*`, `NFR-CFG-*`, `NFR-TEST-*`, `NFR-SEC-*`) are preserved there, so
+existing cross-references remain valid.
 
 ---
 
